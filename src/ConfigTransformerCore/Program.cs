@@ -7,11 +7,12 @@ namespace ConfigTransformerCore
 {
     public static class Program
     {
+        private static ConsoleLogger _consoleLogger;
         private static IXmlTransformationLogger _logger;
 
         public static IXmlTransformationLogger Logger
         {
-            get => _logger ?? (_logger = new ConsoleLogger());
+            get => _logger ?? (_logger = _consoleLogger);
             set => _logger = value;
         }
 
@@ -39,6 +40,8 @@ namespace ConfigTransformerCore
 
             void RunTransformation(Options opts)
             {
+                _consoleLogger = new ConsoleLogger { UseVerboseLogging = opts.Verbose };
+
                 var success = new Transformer(Logger, FilesystemAdapter)
                     .Run(opts);
 

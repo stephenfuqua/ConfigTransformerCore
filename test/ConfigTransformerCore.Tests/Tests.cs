@@ -126,6 +126,7 @@ namespace ConfigTransformerCore.Tests
 
         private string CreateATestFile(string filename, string contents)
         {
+            // Copied from original Microsoft unit tests
             string file = GetTestFilePath(filename);
             File.WriteAllText(file, contents);
             return file;
@@ -133,6 +134,7 @@ namespace ConfigTransformerCore.Tests
 
         private string GetTestFilePath(string filename)
         {
+            // Copied from original Microsoft unit tests, and modified
             var folder = GetTestFileDirectory();
             Directory.CreateDirectory(folder);
             string file = Path.Combine(folder, filename);
@@ -141,6 +143,7 @@ namespace ConfigTransformerCore.Tests
 
         private string GetTestFileDirectory()
         {
+            // Copied from original Microsoft unit tests, and modified
             Uri asm = new Uri(typeof(Tests).GetTypeInfo().Assembly.CodeBase, UriKind.Absolute);
             string dir = Path.GetDirectoryName(asm.LocalPath);
             string folder = Path.Combine(dir, "testfiles");

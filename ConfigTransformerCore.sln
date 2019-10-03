@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigTransformerCore", "src\ConfigTransformerCore\ConfigTransformerCore.csproj", "{061DCE0D-EB7F-43AC-93CF-EB6B64FF9311}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigTransformerCore", "src\ConfigTransformerCore\ConfigTransformerCore.csproj", "{061DCE0D-EB7F-43AC-93CF-EB6B64FF9311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigTransformerCore.Tests", "test\ConfigTransformerCore.Tests\ConfigTransformerCore.Tests.csproj", "{EAD8FD28-45A1-4073-A2F4-5540813C474B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigTransformerCore.Tests", "test\ConfigTransformerCore.Tests\ConfigTransformerCore.Tests.csproj", "{EAD8FD28-45A1-4073-A2F4-5540813C474B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{46CCF93C-4C96-4F11-A24D-F795AB2CD4C4}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
