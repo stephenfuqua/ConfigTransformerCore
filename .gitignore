@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+*.settings
+packages/
+*.user
+publish/
+*~
+node_modules/
+*.pdf
+launchSettings.json
+.vscode/
+tempkey.rsa

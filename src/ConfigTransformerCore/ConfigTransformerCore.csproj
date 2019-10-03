@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <Authors>Stephen A. Fuqua</Authors>
+    <Company>safnet</Company>
+    <Product>ConfigTransformerCore</Product>
+    <Copyright>Copyright (c) 2019, Stephen A. Fuqua</Copyright>
+    <Description>.NET Core tool for transforming XML config files</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageType>DotnetTool</PackageType>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>ConfigTransformerCore</ToolCommandName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.6.0" />
+    <PackageReference Include="Microsoft.Web.Xdt" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
