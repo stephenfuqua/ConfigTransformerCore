@@ -2,17 +2,18 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
     <Authors>Stephen A. Fuqua</Authors>
     <Company>safnet</Company>
     <Product>ConfigTransformerCore</Product>
     <Copyright>Copyright (c) 2019, Stephen A. Fuqua</Copyright>
     <Description>.NET Core tool for transforming XML config files</Description>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/stephenfuqua/ConfigTransformerCore</PackageProjectUrl>
     <PackageType>DotnetTool</PackageType>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>ConfigTransformerCore</ToolCommandName>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
